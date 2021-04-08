@@ -23,10 +23,14 @@ function Info(props) {
       <div className="row"></div>
       <div className="row">
         <div className="col text-right text-primary pt-2 info-text">
-          <PhoneIcon /> 07037127360
+          <p className="text-right">
+            <PhoneIcon /> +234 8033529854
+          </p>
         </div>
-        <div className="col text-right text-primary pt-2 info-text">
-          <EmailIcon /> INFO@BEACONCLIFF.ORG
+        <div className="col  text-primary pt-2 info-text">
+          <p className="text-left">
+            <EmailIcon /> INFO@BEACONCLIFF.ORG
+          </p>
         </div>
         <div className="col">
           <Fab

@@ -1,18 +1,145 @@
 import React from "react";
-import Info from "../header/Info";
-import NavBar from "../header/Nav";
+import MainFooter from "../footer/MainFooter";
+import {
+  Container,
+  Jumbotron,
+  Card,
+  Button,
+  CardTitle,
+  CardImg,
+  CardText,
+  Row,
+  Col,
+} from "reactstrap";
 import Slider from "../slider/HomeSlider";
+import HomeBreadcrumbs from "./Breadcrumb";
 import HomeGrid from "./HomeGrid";
+import SecurityIcon from "@material-ui/icons/Security";
+import SpeedIcon from "@material-ui/icons/Speed";
+import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
+import PhonelinkRingIcon from "@material-ui/icons/PhonelinkRing";
+import PublicIcon from "@material-ui/icons/Public";
+import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
+import LocalShippingIcon from "@material-ui/icons/LocalShipping";
 
 function Home(props) {
   return (
-    <div>
-      <Info />
-      <NavBar />
-      <Slider />
-      <h1>Home Page</h1>
-      <HomeGrid />
-    </div>
+    <>
+      <div>
+        <Slider />
+        <HomeBreadcrumbs />
+        <HomeGrid />
+      </div>
+      <section className="body container mt-5">
+        <h4 className="text-primary">Why Choose us?</h4>
+        <hr />
+        <Row>
+          <Col sm="4">
+            <Card body>
+              <CardTitle tag="h5">Quick & Efficient</CardTitle>
+              <CardText className="text-center">
+                <SpeedIcon color="primary" size={60} />
+              </CardText>
+              <CardText>
+                We quickly, efficiently and accurately carry out our work and
+                save your time.
+              </CardText>
+              <Button color="primary">Learn more</Button>
+            </Card>
+          </Col>
+          <Col sm="4">
+            <Card body>
+              <CardTitle tag="h5">Professionalism</CardTitle>
+              <CardText className="text-center">
+                <CheckCircleOutlineIcon color="primary" size={60} />
+              </CardText>
+              <CardText>
+                We have the most competent employees who always do the job at
+                the highest level.
+              </CardText>
+              <Button color="primary">Learn More</Button>
+            </Card>
+          </Col>
+          <Col sm="4">
+            <Card body>
+              <CardTitle tag="h5">Security & Safety</CardTitle>
+              <CardText className="text-center">
+                <SecurityIcon color="primary" size={60} />
+              </CardText>
+              <CardText>
+                We are concious of how important the safety of clients and their
+                properties is.
+              </CardText>
+              <Button color="primary">Learn More</Button>
+            </Card>
+          </Col>
+        </Row>
+      </section>
+      <hr className="mt-5" />
+      <h3 className="text-center text-primary">4 Easy Steps to move</h3>
+      <hr />
+      <section
+        style={{ height: "300px", backgroundBlendMode: "luminosity" }}
+        className="bg-dark mt-2"
+      >
+        <Row>
+          <Col style={{ alignContent: "center", borderRadius: "75%" }} sm="3">
+            <h3 className="text-white mt-3">1</h3>
+            <PhonelinkRingIcon
+              color="primary"
+              style={{
+                fontSize: "100px",
+                borderRadius: "75%",
+                background: "white",
+                alignSelf: "center",
+              }}
+            />
+            <h3 className="text-white">Get in touch</h3>
+          </Col>
+          <Col style={{ alignContent: "center", borderRadius: "75%" }} sm="3">
+            <h3 className="text-white mt-3">2</h3>
+            <PublicIcon
+              color="primary"
+              style={{
+                fontSize: "100px",
+                borderRadius: "75%",
+                background: "white",
+                alignSelf: "center",
+              }}
+            />
+            <h3 className="text-white">Survey</h3>
+          </Col>
+
+          <Col style={{ alignContent: "center", borderRadius: "75%" }} sm="3">
+            <h3 className="text-white mt-3">3</h3>
+            <VerifiedUserIcon
+              color="primary"
+              style={{
+                fontSize: "100px",
+                borderRadius: "75%",
+                background: "white",
+                alignSelf: "center",
+              }}
+            />
+            <h3 className="text-white">Confirm</h3>
+          </Col>
+          <Col style={{ alignContent: "center", borderRadius: "75%" }} sm="3">
+            <h3 className="text-white mt-3">4</h3>
+            <LocalShippingIcon
+              color="primary"
+              style={{
+                fontSize: "100px",
+                borderRadius: "75%",
+                background: "white",
+                alignSelf: "center",
+              }}
+            />
+            <h3 className="text-white">On the move</h3>
+          </Col>
+        </Row>
+      </section>
+      <MainFooter />
+    </>
   );
 }
 

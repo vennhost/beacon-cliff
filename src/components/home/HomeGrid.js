@@ -18,26 +18,32 @@ const posts = [
     icon: HouseIcon,
 
     header: "Home / Residential Relocation",
+    color: "blue",
   },
   {
     icon: BusinessIcon,
     header: "Office / Coporate Relocation",
+    color: "green",
   },
   {
     icon: StoreIcon,
-    header: "Storage Rental Solutions",
+    header: "Forwarding / Storage Rental Solutions",
+    color: "purple",
   },
   {
     icon: FlightIcon,
     header: "Air Freight",
+    color: "purple",
   },
   {
     icon: DirectionsBoatIcon,
     header: "Sea Freight",
+    color: "blue",
   },
   {
     icon: LocalShippingIcon,
     header: "Road Freight",
+    color: "green",
   },
 ];
 
@@ -46,16 +52,16 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   paper: {
-    height: 440,
+    height: 300,
     width: 400,
   },
   control: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(0),
   },
 }));
 
 export default function HomeGrid() {
-  const [spacing, setSpacing] = React.useState(2);
+  const [spacing, setSpacing] = React.useState(0);
   const classes = useStyles();
 
   const handleChange = (event) => {
@@ -63,12 +69,24 @@ export default function HomeGrid() {
   };
 
   return (
-    <Grid container className={classes.root} spacing={2}>
+    <Grid container className={classes.root} spacing={0}>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
           {posts.map((post, i) => (
             <Grid key={i} item>
-              <Paper className={classes.paper}> {post.header} </Paper>
+              <Paper
+                style={{
+                  background: post.color,
+                  alignContent: "center",
+                  alignSelf: "center",
+                  paddingTop: 100,
+                }}
+                className={classes.paper}
+              >
+                <post.icon style={{ color: "white", fontSize: "60px" }} />
+
+                <h2 className="text-white">{post.header}</h2>
+              </Paper>
             </Grid>
           ))}
         </Grid>
