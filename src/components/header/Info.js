@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Fab from "@material-ui/core/Fab";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
+import GetQuote from "../utilities/GetQuote";
 
 const useStyles = makeStyles((theme) => ({
   margin: {
@@ -32,17 +33,18 @@ function Info(props) {
             <EmailIcon /> INFO@BEACONCLIFF.ORG
           </p>
         </div>
-        <div className="col">
-          <Fab
+        <div className="col pt-2">
+          <GetQuote />
+          {/*  <Fab
             variant="extended"
             size="small"
             color="primary"
             aria-label="add"
             className={classes.margin}
           >
-            {/*  <NavigationIcon className={classes.extendedIcon} /> */}
+           
             Request a Quote
-          </Fab>
+          </Fab> */}
         </div>
       </div>
     </div>

@@ -18,3 +18,7 @@ code {
   font-weight: 600;
   font-style: italic;
 }
+
+.home-grid :hover {
+  background: white;
+}
