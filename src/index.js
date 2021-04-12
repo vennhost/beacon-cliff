@@ -5,6 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

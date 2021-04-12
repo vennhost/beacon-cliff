@@ -73,7 +73,7 @@ export default function HomeGrid() {
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
           {posts.map((post, i) => (
-            <Grid key={i} item>
+            <Grid data-aos="zoom-in-up" key={i} item>
               <Paper
                 style={{
                   background: post.color,
