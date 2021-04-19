@@ -43,6 +43,12 @@ class MainFooter extends Component {
                 <Link className="text-white" to="/about">
                   Who we are
                 </Link>
+                <a
+                  className="text-white"
+                  href="/https://beaconcliff.org/webmail"
+                >
+                  Staff Email
+                </a>
               </Nav>
             </div>
             <div className="col text-left">
