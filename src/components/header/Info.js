@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 function Info(props) {
   const classes = useStyles();
   return (
-    <div className="container m-2">
+    <div className="container m-2 info">
       <div className="row"></div>
       <div className="row"></div>
       <div className="row"></div>

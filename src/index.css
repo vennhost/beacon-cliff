@@ -38,3 +38,20 @@ code {
   color: goldenrod;
   transform: rotate(20deg) !important;
 }
+
+@media only screen and (max-width: 765px) {
+  .info {
+    display: none;
+  }
+  .logo {
+    width: 200px;
+    align-self: flex-end !important;
+    justify-self: flex-end !important;
+    padding-left: 10px !important;
+    margin-left: auto !important;
+    position: absolute !important;
+    display: flex !important;
+    flex-direction: row;
+    padding-bottom: auto !important;
+  }
+}

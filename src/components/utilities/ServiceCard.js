@@ -69,14 +69,7 @@ export default function ServiceCard() {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Get Quote
-        </Button>
-      </CardActions>
+      <CardActions></CardActions>
     </Card>
   );
 }

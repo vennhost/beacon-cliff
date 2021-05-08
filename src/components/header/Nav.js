@@ -28,7 +28,7 @@ const NavBar = (props) => {
   };
 
   return (
-    <Navbar color="warning" light expand="md" className="sticky-top">
+    <Navbar color="warning" light expand="md" className="sticky-top nav-bar">
       <NavbarBrand style={{ position: "absolute" }} href="/">
         <img
           style={{
@@ -36,7 +36,7 @@ const NavBar = (props) => {
             display: "inline-block",
             paddingBottom: "30px",
           }}
-          className="mr-auto"
+          className="mr-auto logo"
           src={logo}
           alt="logo"
           width="250px"
@@ -51,6 +51,10 @@ const NavBar = (props) => {
           <NavItem>
             <NavLink href="/about">About us</NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink href="/relocation">Services</NavLink>
+          </NavItem>
+          <NavItem></NavItem>
 
           <NavItem>
             <NavLink href="/news-event">News & Events</NavLink>
@@ -58,23 +62,7 @@ const NavBar = (props) => {
           <NavItem>
             <NavLink href="/career">Career</NavLink>
           </NavItem>
-          <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret>
-              Services
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem>
-                <Link to="/relocation">Home / Coporate Relocation</Link>{" "}
-              </DropdownItem>
 
-              <DropdownItem>
-                <Link to="/air">Air Freight</Link>
-              </DropdownItem>
-              <DropdownItem>
-                <Link to="/sea">Sea Freight</Link>
-              </DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
           <NavItem>
             <NavLink href="/gallery">Gallery</NavLink>
           </NavItem>

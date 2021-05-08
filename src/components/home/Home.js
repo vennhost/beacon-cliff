@@ -31,8 +31,8 @@ function Home(props) {
         <HomeGrid />
       </div>
       <hr />
-      <section className="body container mt-5">
-        <h4 className="text-primary container heading">Why Choose us?</h4>
+      <section className="body container mt-5 mb-5">
+        <h4 className="text-primary container heading mb-5">Why Choose us?</h4>
 
         <Row>
           <Col sm="4">
@@ -85,7 +85,7 @@ function Home(props) {
         style={{ height: "300px", backgroundBlendMode: "luminosity" }}
         className="bg-dark mt-2 mb-5"
       >
-        <Row>
+        <Row className="mt-5 pt-5">
           <Col style={{ alignContent: "center", borderRadius: "75%" }} sm="3">
             <h3 className="text-white mt-3">1</h3>
             <PhonelinkRingIcon
@@ -145,14 +145,19 @@ function Home(props) {
           </Col>
         </Row>
       </section>
-      <div style={{ background: "goldenrod" }} className="">
-        <h5 className="text-white">Member of:</h5>
-        <img
-          className="m-1"
-          src="https://s3.amazonaws.com/rdcms-iam/files/production/public/images/IAM_wTag-W_blue_logo.png"
-          width="200px"
-          alt="Movers Logo"
-        />
+      <div style={{ justifyContent: "center", display: "flex" }}>
+        <div
+          style={{ width: "300px" }}
+          className="shadow p-3 mb-5 bg-body rounded"
+        >
+          <h5 className="text-dark">Member of:</h5>
+          <img
+            className="m-1"
+            src="https://s3.amazonaws.com/rdcms-iam/files/production/public/images/IAM_wTag-W_blue_logo.png"
+            width="200px"
+            alt="Movers Logo"
+          />
+        </div>
       </div>
       <MainFooter />
     </>
