@@ -30,9 +30,10 @@ function Home(props) {
         <HomeBreadcrumbs />
         <HomeGrid />
       </div>
+      <hr />
       <section className="body container mt-5">
-        <h4 className="text-primary">Why Choose us?</h4>
-        <hr />
+        <h4 className="text-primary container heading">Why Choose us?</h4>
+
         <Row>
           <Col sm="4">
             <Card body>
@@ -76,16 +77,19 @@ function Home(props) {
         </Row>
       </section>
       <hr className="mt-5" />
-      <h3 className="text-center text-primary">4 Easy Steps to move</h3>
-      <hr />
+      <h3 className="text-center text-primary mb-3 container heading">
+        4 Easy Steps to move
+      </h3>
+
       <section
         style={{ height: "300px", backgroundBlendMode: "luminosity" }}
-        className="bg-dark mt-2"
+        className="bg-dark mt-2 mb-5"
       >
         <Row>
           <Col style={{ alignContent: "center", borderRadius: "75%" }} sm="3">
             <h3 className="text-white mt-3">1</h3>
             <PhonelinkRingIcon
+              className="icon-service"
               color="primary"
               style={{
                 fontSize: "100px",
@@ -99,6 +103,7 @@ function Home(props) {
           <Col style={{ alignContent: "center", borderRadius: "75%" }} sm="3">
             <h3 className="text-white mt-3">2</h3>
             <PublicIcon
+              className="icon-service"
               color="primary"
               style={{
                 fontSize: "100px",
@@ -113,6 +118,7 @@ function Home(props) {
           <Col style={{ alignContent: "center", borderRadius: "75%" }} sm="3">
             <h3 className="text-white mt-3">3</h3>
             <VerifiedUserIcon
+              className="icon-service"
               color="primary"
               style={{
                 fontSize: "100px",
@@ -126,6 +132,7 @@ function Home(props) {
           <Col style={{ alignContent: "center", borderRadius: "75%" }} sm="3">
             <h3 className="text-white mt-3">4</h3>
             <LocalShippingIcon
+              className="icon-service"
               color="primary"
               style={{
                 fontSize: "100px",
@@ -138,6 +145,15 @@ function Home(props) {
           </Col>
         </Row>
       </section>
+      <div style={{ background: "goldenrod" }} className="">
+        <h5 className="text-white">Member of:</h5>
+        <img
+          className="m-1"
+          src="https://s3.amazonaws.com/rdcms-iam/files/production/public/images/IAM_wTag-W_blue_logo.png"
+          width="200px"
+          alt="Movers Logo"
+        />
+      </div>
       <MainFooter />
     </>
   );

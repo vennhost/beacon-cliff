@@ -17,17 +17,17 @@ const posts = [
   {
     icon: HouseIcon,
 
-    header: "Home / Residential Relocation",
+    header: "Household / Office Relocation",
     color: "blue",
   },
   {
-    icon: BusinessIcon,
-    header: "Office / Coporate Relocation",
+    icon: DirectionsBoatIcon,
+    header: "Shipping",
     color: "green",
   },
   {
-    icon: StoreIcon,
-    header: "Forwarding / Storage Rental Solutions",
+    icon: BusinessIcon,
+    header: "Clearing / Forwarding",
     color: "purple",
   },
   {
@@ -36,13 +36,13 @@ const posts = [
     color: "purple",
   },
   {
-    icon: DirectionsBoatIcon,
-    header: "Sea Freight",
+    icon: StoreIcon,
+    header: "Warehousing / Distribution",
     color: "blue",
   },
   {
     icon: LocalShippingIcon,
-    header: "Road Freight",
+    header: "Haulage",
     color: "green",
   },
 ];

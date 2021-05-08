@@ -22,3 +22,19 @@ code {
 .home-grid :hover {
   background: white;
 }
+
+.heading {
+  border-left: goldenrod 5px solid !important;
+  max-width: 200px !important;
+  justify-self: center;
+}
+
+.icon-service {
+}
+
+.icon-service:hover {
+  font-size: 80px !important;
+
+  color: goldenrod;
+  transform: rotate(20deg) !important;
+}

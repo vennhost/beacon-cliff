@@ -25,26 +25,13 @@ function Info(props) {
       <div className="row">
         <div className="col text-right text-primary pt-2 info-text">
           <p className="text-right">
-            <PhoneIcon /> +234 8033529854
+            <PhoneIcon /> +234 8124394264
           </p>
         </div>
         <div className="col  text-primary pt-2 info-text">
           <p className="text-left">
             <EmailIcon /> INFO@BEACONCLIFF.ORG
           </p>
-        </div>
-        <div className="col pt-2">
-          <GetQuote />
-          {/*  <Fab
-            variant="extended"
-            size="small"
-            color="primary"
-            aria-label="add"
-            className={classes.margin}
-          >
-           
-            Request a Quote
-          </Fab> */}
         </div>
       </div>
     </div>

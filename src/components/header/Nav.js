@@ -16,6 +16,7 @@ import {
   Button,
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import GetQuote from "../utilities/GetQuote";
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +49,14 @@ const NavBar = (props) => {
             <NavLink href="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/partners">Partners</NavLink>
+            <NavLink href="/about">About us</NavLink>
+          </NavItem>
+
+          <NavItem>
+            <NavLink href="/news-event">News & Events</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/career">Career</NavLink>
           </NavItem>
           <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
@@ -70,11 +78,15 @@ const NavBar = (props) => {
           <NavItem>
             <NavLink href="/gallery">Gallery</NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink href="/contact">Contact us</NavLink>
+          </NavItem>
         </Nav>
         <NavbarText>
-          <Button onClick={handleGetStarted} color="primary">
+          {/* <Button onClick={handleGetStarted} color="primary">
             Get Started
-          </Button>{" "}
+          </Button> */}
+          <GetQuote />
         </NavbarText>
       </Collapse>
     </Navbar>
